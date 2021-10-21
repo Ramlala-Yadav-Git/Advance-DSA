@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Callback</title>
+</head>
+
+<body>
+    <h1>Callback</h1>
+</body>
+
+<script>
+    /*
+    whenever one function is executed then other willbe call backed
+
+    like => jab hm kisi ko pohne karte hai aur wo phle se busy rhta hai to
+    kehta hai ki mai aapko callback krta hu
+    */
+
+
+    function fun1() {
+        setTimeout(() => {
+            console.log("first function");
+            fun2()
+        }, 3000)
+    }
+
+    function fun2() {
+        console.log("callback function")
+    }
+</script>
+
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>This</title>
+</head>
+
+<body>
+    <h1>This keyword</h1>
+</body>
+
+<script>
+    // function me use kiya gya this global object ko refer krrta hai
+    //method me use kiya gya this parent object ko refer karta hai
+
+    function This() {
+
+        console.log(this)
+        // window object 
+    }
+
+    const Person = {
+        name: "Ram",
+        age: 24,
+        print: function () {
+            console.log(this) // parent Person ko refer karega
+
+            function Inner() {
+                console.log(this)// global ko refer karega kyuki yeh ek regular function hai
+            }
+            Inner()
+        }
+    }
+
+
+</script>
+
+</html>
