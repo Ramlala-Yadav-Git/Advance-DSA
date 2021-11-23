@@ -10,7 +10,7 @@ function main(e, delay) {
     if (timer) {
         clearInterval(timer);
     }
-    timer = setTimeout(() => {
+    timer = setInterval(() => {
         getData()
     }, 300)
 }

@@ -1,18 +1,18 @@
 
 
 const outer = (a) => {
-    let b = 10;
+  let b = 10;
 
-    const inner = () => {
-        console.log(a + b, "hi")
-        return 5
-    }
-    return inner;
+  const inner = () => {
+    console.log(a + b, "hi")
+    return 5
+  }
+  return inner;
 }
 console.log(outer(10)())
 
 // >>>>>>>>>>>> lexical scoping means inner function can access his parent function
-// variables ans utilities
+// variables and utilities
 
 /* 
 A closure is the combination of a function and the 

@@ -11,7 +11,7 @@ function throttle(timeFrame) {
 
 
 
-let execute = throttle(3000)
+let execute = throttle(300)
 
 
 function main() {
